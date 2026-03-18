@@ -1,11 +1,12 @@
-import { StyleSheet, Text, View } from "react-native";
-import { Slot, Stack } from "expo-router";
+import { Stack } from "expo-router";
+import "../global.css"; // ✅ add this
 
-const RooyLayout = () => {
+const RootLayout = () => {
   return (
     <Stack>
       <Stack.Screen name="index" options={{ headerShown: false }} />
     </Stack>
   );
 };
-export default RooyLayout;
+
+export default RootLayout;
